@@ -1,4 +1,4 @@
-[![DOI](https://zenodo.org/badge/46740228.svg)](https://www.ingenieria.unam.mx/programas_academicos/licenciatura/Computacion/04/algoritmos_y_estructuras_de_datos.pdf)[![DOI](https://zenodo.org/badge/46740228.svg)](https://odin.fi-b.unam.mx/salaD/pdf/EDAI/MADO-19_EDAI_v3.pdf)
+[![DOI](https://zenodo.org/badge/46740228.svg)](http://lcp02.fi-b.unam.mx/#)[![DOI](https://zenodo.org/badge/46740228.svg)](http://lcp02.fi-b.unam.mx/#)
 
 # Estructura De Datos Y Algoritmos II
 
