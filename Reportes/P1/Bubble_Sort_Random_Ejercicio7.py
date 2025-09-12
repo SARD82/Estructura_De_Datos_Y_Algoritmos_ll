@@ -11,7 +11,7 @@ def bubbleSort(A):
                 A[j + 1] = temp
             # Deleting print to optimize
 
-A = [random.randint(-1000, 1000) for _ in range(n)] #Change the letter "n" for the number of components that u array is gonna have
+A = [random.randint(-1000, 1000) for _ in range(10)] #Change the letter "n" for the number of components that u array is gonna have
 print("Given array\n\n", A)
 bubbleSort(A)
 print("\n")

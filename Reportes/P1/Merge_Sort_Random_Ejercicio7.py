@@ -49,7 +49,7 @@ def printList(arr):
         print(arr[i], end = " ")
     print()
 
-arr = [random.randint(-1000, 1000) for _ in range(n)] #Change the letter "n" for the number of components that u array is gonna have
+arr = [random.randint(-1000, 1000) for _ in range(10)] #Change the letter "n" for the number of components that u array is gonna have
 print("Given array is", end = "\n")
 printList(arr)
 mergeSort(arr)
