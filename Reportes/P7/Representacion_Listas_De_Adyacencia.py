@@ -1,21 +1,22 @@
 class Vertice:
-    def __init__(self, n):
+    def __init__ (self, n):
         self.nombre=n
         self.vecinos= list()
-    def agregarVecino(self, v):
+    def agregarVecino(self,v):
         if v not in self.vecinos:
             self.vecinos.append(v)
             self.vecinos.sort()
-            
+
+
 class Grafo:
     vertices={}
     def agregarVertice(self, vertice):
-        if isinstance(vertice, Vertice) and vertice.nombre not in self.vertices:
+        if isinstance(vertice,Vertice) and vertice.nombre not in self.vertices:
             self.vertices[vertice.nombre]=vertice
             return True
         else:
             return False
-        
+       
     def agregarArista(self, u, v):
         if u in self.vertices and v in self.vertices:
             for key, value in self.vertices.items():
@@ -26,25 +27,22 @@ class Grafo:
             return True
         else:
             return False
-        
     def imprimeGrafo(self):
         for key in sorted(list(self.vertices.keys())):
-            print("vertice "+key+" sus vecinos son "+str(self.vertices[key].vecinos))
+            print("Vertice "+key+" Sus vecinos son"+str(self.vertices[key].vecinos))
+
 
 class Controladora:
+
+
     def main(self):
         g=Grafo()
         a=Vertice('A')
         g.agregarVertice(a)
-        for i in range (ord('A'), ord('I')):
+        for i in range (ord('A'),ord('L')):
             g.agregarVertice(Vertice(chr(i)))
-        edges=['AE','AD','AG',
-               'BC', 'BH', 'BF',
-               'CB', 'CE',
-               'DA', 'DE', 'DH', 'DG'
-               'EA', 'EC', 'ED',
-               'FB',
-               'GA', 'GD']
+        edges=['AC','AB','BC','BD','CD','DE','DG','EG','EF','GH','EH',
+               'GF','FH','FI','HI','IJ','IK','JK']
         for edge in edges:
             g.agregarArista(edge[:1],edge[1:])
         g.imprimeGrafo()
